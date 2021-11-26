@@ -1,0 +1,185 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #413e3e;
+}
+
+.time {
+  position: fixed;
+  margin-left: 15vw;
+  border-radius: 3px;
+  width: 90px;
+  height: 50px;
+  background-color: antiquewhite;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: Geneva, Tahoma, sans-serif;
+}
+
+.score {
+  position: fixed;
+  margin-left: 15vw;
+  margin-top: 65px;
+  border-radius: 3px;
+  width: 90px;
+  height: 50px;
+  background-color: antiquewhite;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bolder;
+  font-size: 15px;
+  font-family: Geneva, Tahoma, sans-serif;
+}
+
+.main {
+  margin-bottom: 50px;
+}
+
+.stage {
+  width: 40%;
+  margin: auto;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.plaque {
+  margin: 0px 15px;
+  width: 100px;
+  height: 130px;
+  backdrop-filter: blur(25px) saturate(0%);
+  -webkit-backdrop-filter: blur(25px) saturate(0%);
+  background-color: rgba(255, 255, 255, 0.28);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.plaque:hover {
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(45, 55, 189, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(45, 55, 189, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.plaqued {
+  margin: 0px 15px;
+  width: 100px;
+  height: 130px;
+  backdrop-filter: blur(25px) saturate(0%);
+  -webkit-backdrop-filter: blur(25px) saturate(0%);
+  background-color: rgba(255, 255, 255, 0.28);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  -webkit-animation: break 4s linear 1;
+          animation: break 4s linear 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes break {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  8% {
+    -webkit-transform-origin: 50% 85%;
+            transform-origin: 50% 85%;
+    -webkit-transform: rotate(140deg);
+            transform: rotate(140deg);
+  }
+  20% {
+    -webkit-transform-origin: 80% 90%;
+            transform-origin: 80% 90%;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  40% {
+    -webkit-transform-origin: 55% 90%;
+            transform-origin: 55% 90%;
+    -webkit-transform: rotate(150deg);
+            transform: rotate(150deg);
+  }
+  65% {
+    -webkit-transform-origin: 70% 90%;
+            transform-origin: 70% 90%;
+    -webkit-transform: rotate(170deg);
+            transform: rotate(170deg);
+  }
+  100% {
+    -webkit-transform-origin: 60% 90%;
+            transform-origin: 60% 90%;
+    -webkit-transform: rotate(155deg);
+            transform: rotate(155deg);
+  }
+}
+
+@keyframes break {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  8% {
+    -webkit-transform-origin: 50% 85%;
+            transform-origin: 50% 85%;
+    -webkit-transform: rotate(140deg);
+            transform: rotate(140deg);
+  }
+  20% {
+    -webkit-transform-origin: 80% 90%;
+            transform-origin: 80% 90%;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  40% {
+    -webkit-transform-origin: 55% 90%;
+            transform-origin: 55% 90%;
+    -webkit-transform: rotate(150deg);
+            transform: rotate(150deg);
+  }
+  65% {
+    -webkit-transform-origin: 70% 90%;
+            transform-origin: 70% 90%;
+    -webkit-transform: rotate(170deg);
+            transform: rotate(170deg);
+  }
+  100% {
+    -webkit-transform-origin: 60% 90%;
+            transform-origin: 60% 90%;
+    -webkit-transform: rotate(155deg);
+            transform: rotate(155deg);
+  }
+}
+
+.btn {
+  position: relative;
+  border-radius: 3px;
+  height: 50px;
+  width: 80px;
+  background-color: #817d7d;
+  z-index: 5;
+  color: yellow;
+  top: -70px;
+  text-align: center;
+  line-height: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 3px;
+  margin: auto;
+}
+
+.btn:hover {
+  background-color: #4e4b4b;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
